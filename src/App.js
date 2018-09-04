@@ -9,8 +9,17 @@ import Post from './Posts/Post';
 import Posts from './Posts/Posts';
 import NewPost from './Posts/NewPost';
 
+const defaultState = {
+  isEditMode: false,
+
+}
+
 const client = new ApolloClient({
-  uri: 'https://api-euwest.graphcms.com/v1/cjll177mn0hmo016bvgbgb0sp/master'
+  uri: 'https://api-euwest.graphcms.com/v1/cjll177mn0hmo016bvgbgb0sp/master',
+  clientState: {
+    defaults: defaultState,
+    resolvers: {}
+  }
 });
 
 
