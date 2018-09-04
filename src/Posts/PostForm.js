@@ -46,7 +46,7 @@ export default class PostForm extends Component {
       >
         <input name='title' type='text' onChange={this.handeInput} value={title} placeholder='title' />
         <textarea name='body' type='text' onChange={this.handeInput} value={body} placeholder='body' />
-        <button>Submit</button>
+        <button className="button">Submit</button>
       </form>
     )
   }
