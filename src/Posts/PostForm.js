@@ -23,7 +23,7 @@ export default class PostForm extends Component {
     const formData = {};
     formData[e.target.name] = e.target.value;
     this.setState({ ...formData });
-  };
+  }
 
   render() {
     const { onSubmit, onSuccess } = this.props;
